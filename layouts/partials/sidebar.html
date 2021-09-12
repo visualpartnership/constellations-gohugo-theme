@@ -3,10 +3,12 @@
     <!-- about -->
     <div class="widget">
       {{ with .Site.GetPage "/about" }}
-      <h4 class="widget-title">{{ .Title | markdownify }}</h4>
+      <span style="font-size: 2rem; font-family: 'Oswald', sans-serif; color: #00000;">by Visual</span>
+      <span style="font-size: 2rem; font-family: 'Pacifico', cursive; color: #eb605e;">Partner</span>
+      <span style="font-size: 2rem; font-family: 'Patrick Hand', cursive; color: #00000;">-SHIP </span>
       {{ if .Params.Image }}
       <img src="{{ .Params.Image | absURL }}" alt=""
-        class="img-fluid author-thumb-sm d-block mx-auto rounded-circle mb-4">
+        class="img-fluid d-block mx-auto rounded-circle mb-4">
       {{ end }}
       <p>{{ .Summary }}</p>
       <a href="{{ .Permalink }}" class="btn btn-outline-primary">Know More</a>
